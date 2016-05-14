@@ -81,7 +81,6 @@ class DisqusExtension extends DataExtension {
 			        (document.getElementsByTagName(\'head\')[0] || document.getElementsByTagName(\'body\')[0]).appendChild(dsq);
 			    })();				
 			';
-			Requirements::customScript($script);
 			
 			$templateData = array(
 				'SyncDisqus' => true
@@ -95,7 +94,7 @@ class DisqusExtension extends DataExtension {
 				}
 				window.onload = hideLocalComments;
 			";
-			Requirements::customScript($hideLocal);
+			Requirements::customScript($script.$hideLocal);
 			
 			// Get comments 
 			//$results = DataObject::get('DisqusComment',"isSynced = 1 AND isApproved = 1 AND threadIdentifier = '$ti'");
