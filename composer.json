@@ -1,5 +1,5 @@
 {
-    "name": "silverstripesk/silverstripe-disqus",
+    "name": "swilsonalfa/silverstripe-disqus",
     "description": "Disqus module for SilverStripe CMS http://silverstripe.sk/clanky/disqus/",
     "type": "silverstripe-module",
     "keywords": ["silverstripe", "comments", "disqus"],
